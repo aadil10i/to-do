@@ -9,3 +9,7 @@
 body {
   @apply bg;
 }
+
+.card {
+  background-color: #111828;
+}

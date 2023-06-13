@@ -1,7 +1,6 @@
-import { type NextPage } from "next";
+// import LoginForm from "@/components/LoginForm";
+import Todo from "@/components/TodoList";
 
-const Home: NextPage = () => {
-  return <main className=""></main>;
-};
-
-export default Home;
+export default function LoginPage() {
+  return <Todo />;
+}
