@@ -13,3 +13,7 @@ body {
 .card {
   background-color: #111828;
 }
+
+.card-custom-size {
+  width: 610px;
+}
