@@ -1,30 +1,17 @@
 # React Todo App
-Created with Next.js and tailwindcss w/ Authentication.
+Created with Next.js, tailwindcss w/ NextAuth.
 
 <!-- add screenshot -->
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
+* [![Typescript][Typescript]]
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Tailwind][Tailwind]][Tailwind]
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-2. Install packages
-   ```sh
-   pnpm install
-   ```
-3. run dev
-   ```sh
-   pnpm run dev
-
+* [![Tailwindcss][Tailwindcss]][Tailwind-url]
+* [![SQLite][SQLite]]
+* [![Prisma][Prisma]][Prisma-url]
+* [![NextAuth][NextAuth]][NextAuth-url]
 
 <!-- Todo -->
 ## Todo
@@ -35,13 +22,11 @@ This section should list any major frameworks/libraries used to bootstrap your p
 - [ ] make login page
 - [ ] add authentication
 
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Shadcn](https://ui.shadcn.com/) for switch component
+* [shadcn](https://ui.shadcn.com/) for switch component
 * [Heroicons](https://heroicons.dev/) For plusicon
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -50,11 +35,25 @@ This section should list any major frameworks/libraries used to bootstrap your p
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[Tailwindcss]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[SQLite]: https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white
+[Prisma]: https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white
+[Prisma-url]: https://www.prisma.io/
+[NextAuth]: https://img.shields.io/badge/NextAuth.js-000000?style=for-the-badge&logo=nextauthdotjs&logoColor=white
+[NextAuth-url]: https://next-auth.js.org/
+[Typescript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
+
+
+<!-- Contribution -->
+## Contribution
+
+Feel free to contribute
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License.
 
 
 
