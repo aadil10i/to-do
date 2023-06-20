@@ -5,11 +5,11 @@ Created with Next.js, tailwindcss w/ NextAuth.
 
 ### Built With
 
-* [![Typescript][Typescript]]
+* [![Typescript][Typescript]
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Tailwindcss][Tailwindcss]][Tailwind-url]
-* [![SQLite][SQLite]]
+* [![SQLite][SQLite]
 * [![Prisma][Prisma]][Prisma-url]
 * [![NextAuth][NextAuth]][NextAuth-url]
 
