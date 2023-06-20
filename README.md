@@ -1,6 +1,4 @@
 # React Todo App
-Created with Next.js, tailwindcss w/ NextAuth.
-
 <!-- add screenshot -->
 
 ### Built With
