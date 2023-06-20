@@ -9,8 +9,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* [![Tailwind][Tailwind]][Tailwind]
 
 ### Installation
 
@@ -26,27 +25,22 @@ This section should list any major frameworks/libraries used to bootstrap your p
    ```sh
    pnpm run dev
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Todo -->
+## Todo
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add createtodo component
-- [x] Make toggletodo stick
+- [ ] Add createtodo component
+- [ ] Make toggletodo stick
 - [ ] add deletetodo
 - [ ] make login page
 - [ ] add authentication
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 * [Shadcn](https://ui.shadcn.com/) for switch component
 * [Heroicons](https://heroicons.dev/) For plusicon
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -62,6 +56,5 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
