@@ -1,6 +1,5 @@
-// import LoginForm from "@/components/LoginForm";
-import Todo from "@/components/TodoPage";
+import LoginForm from "@/components/LoginForm";
 
 export default function LoginPage() {
-  return <Todo />;
+  return <LoginForm />;
 }

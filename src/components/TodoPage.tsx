@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { PlusIcon } from "@heroicons/react/24/solid";
 import { Switch } from "./switch";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Todo() {
   const [todo, setTodo] = useState("");
@@ -17,29 +18,46 @@ export default function Todo() {
             Logout
           </div>
         </div>
-        <form className="*card-body* flex-col gap-2 px-6 py-6">
-          <div className="flex gap-2">
-            <input
-              type="text"
-              id="item"
-              placeholder="Make a Next demo"
-              className="h-9 w-full resize-none rounded-lg border border-gray-700 bg-transparent px-2.5 py-1.5 text-sm text-white placeholder-gray-500 focus:border-2 focus:border-cyan-500 focus:outline-none"
-            ></input>
-            <button type="submit">
-              <PlusIcon className="h-6 w-6 rounded-md bg-cyan-500 text-black ring-2 ring-cyan-500" />
-            </button>
-          </div>
+        <div className="*card-body* flex-col gap-2 px-6 py-6">
+          <form>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                id="item"
+                placeholder="Make a Next demo"
+                className="h-9 w-full resize-none rounded-lg border-2 border-gray-700 bg-transparent px-2.5 py-1.5 text-sm text-white placeholder-gray-500 focus:border-2 focus:border-cyan-500 focus:outline-none"
+              ></input>
+              <button type="submit">
+                <PlusIcon className="h-6 w-6 rounded-md bg-cyan-500 text-black ring-2 ring-cyan-500" />
+              </button>
+            </div>
+          </form>
           <ul className="flex-col gap-4">
-            <li className="flex items-center gap-4 pt-4 font-medium text-white">
+            <li
+              className={`${
+                isToggled ? "line-through" : ""
+              } flex items-center gap-4 pt-4 font-medium text-white`}
+            >
               <label htmlFor="text1">dwyduhwijwd</label>
-              <Switch />
+              <Switch
+                onChange={() => {
+                  console.log("duwhdijw");
+                  setIsToggled(!isToggled);
+                }}
+              />
+              <button className="rounded-md border border-red-950 bg-red-950">
+                <XMarkIcon className="h-5 w-5 text-red-400 " />
+              </button>
             </li>
             <li className="flex items-center gap-4 pt-4 font-medium text-white">
-              <label htmlFor="text2">diwduwijd</label>
+              <label htmlFor="text2">diwduwgdwftgyhudijokwdijd</label>
               <Switch />
+              <button className="rounded border border-red-950 bg-red-950">
+                <XMarkIcon className="h-5 w-5 text-red-400 " />
+              </button>
             </li>
           </ul>
-        </form>
+        </div>
       </div>
       <footer className="*card-footer*">
         <a
