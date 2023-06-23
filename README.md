@@ -20,12 +20,6 @@
 - [ ] make login page
 - [ ] add authentication
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* [shadcn](https://ui.shadcn.com/) for switch component
-* [Heroicons](https://heroicons.dev/) For plusicon
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [product-screenshot]: images/screenshot.png
