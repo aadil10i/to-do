@@ -1,11 +1,31 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { PlusIcon } from "@heroicons/react/24/solid";
 import { Switch } from "./switch";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Todo() {
-  const [todo, setTodo] = useState("");
+  interface Todo {
+    id: string;
+    item: string;
+    completed: boolean;
+  }
+
+  const [newItem, setNewItem] = useState("");
+  const [Todos, setTodos] = useState<Todo[]>([]);
   const [isToggled, setIsToggled] = useState(false);
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+
+    setTodos((currentTodos) => {
+      return [
+        ...currentTodos,
+        { id: crypto.randomUUID(), item: newItem, completed: false },
+      ];
+    });
+  }
+
+  console.log(Todos);
 
   return (
     <div className="flex h-screen flex-col items-center justify-center">
@@ -19,9 +39,11 @@ export default function Todo() {
           </div>
         </div>
         <div className="*card-body* flex-col gap-2 px-6 py-6">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="flex gap-2">
               <input
+                value={newItem}
+                onChange={(e) => setNewItem(e.target.value)}
                 type="text"
                 id="item"
                 placeholder="Make a Next demo"
@@ -45,7 +67,10 @@ export default function Todo() {
                   setIsToggled(!isToggled);
                 }}
               />
-              <button className="rounded-md border border-red-950 bg-red-950">
+              <button
+                // onChange={}
+                className="rounded-md border border-red-950 bg-red-950"
+              >
                 <XMarkIcon className="h-5 w-5 text-red-400 " />
               </button>
             </li>
