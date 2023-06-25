@@ -20,6 +20,21 @@
 - [ ] make login page
 - [ ] add authentication
 
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/aadil10i/to-do
+   ```
+3. Install NPM packages
+   ```sh
+   pnpm i
+   ```
+4. Enter your API in `config.js`
+   ```sh
+   pnpm run
+   ```
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [product-screenshot]: images/screenshot.png
