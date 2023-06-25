@@ -22,16 +22,13 @@
 
 ### Installation
 
-1. Clone the repo
-   ```sh
+1. ```sh
    git clone https://github.com/aadil10i/to-do
    ```
-3. Install NPM packages
-   ```sh
+3. ```sh
    pnpm i
    ```
-4. Enter your API in `config.js`
-   ```sh
+4. ```sh
    pnpm run
    ```
 
