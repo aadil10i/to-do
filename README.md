@@ -19,7 +19,7 @@
 - [ ] add authentication
 - [ ] save on referesh
 
-### Installation
+### run locally
 
 1. ```sh
    git clone https://github.com/aadil10i/to-do
