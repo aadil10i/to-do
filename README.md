@@ -14,11 +14,10 @@
 <!-- Todo -->
 ## Todo
 
-- [ ] Add createtodo component
-- [ ] Make toggletodo stick
-- [ ] add deletetodo
-- [ ] make login page
+- [x] add deletetodo
+- [x] make login page
 - [ ] add authentication
+- [ ] save on referesh
 
 ### Installation
 
