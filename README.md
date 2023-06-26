@@ -14,11 +14,22 @@
 <!-- Todo -->
 ## Todo
 
-- [ ] Add createtodo component
-- [ ] Make toggletodo stick
-- [ ] add deletetodo
-- [ ] make login page
+- [x] add deletetodo
+- [x] make login page
 - [ ] add authentication
+- [ ] save on referesh
+
+### run locally
+
+1. ```sh
+   git clone https://github.com/aadil10i/to-do
+   ```
+3. ```sh
+   pnpm i
+   ```
+4. ```sh
+   pnpm run
+   ```
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
