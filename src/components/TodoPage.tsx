@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { PlusIcon } from "@heroicons/react/24/solid";
 import { Switch } from "./switch";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import Footer from "./CardFooter";
 
 export default function Todo() {
   interface Todo {
@@ -12,7 +13,6 @@ export default function Todo() {
 
   const [newItem, setNewItem] = useState("");
   const [Todos, setTodos] = useState<Todo[]>([]);
-  const [isToggled, setIsToggled] = useState(false);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -20,12 +20,30 @@ export default function Todo() {
     setTodos((currentTodos) => {
       return [
         ...currentTodos,
-        { id: crypto.randomUUID(), item: newItem, completed: false },
+        { id: crypto.randomUUID(), item: newItem, completed: true },
       ];
+    });
+    setNewItem("");
+  }
+
+  function deleteTodo(id: string) {
+    setTodos((currentTodos) => {
+      return currentTodos.filter((todo): todo is Todo => todo.id !== id);
     });
   }
 
-  console.log(Todos);
+  function toggleTodo(id: string, completed: boolean) {
+    setTodos((currentTodos) => {
+      return currentTodos.map((todo) => {
+        if (todo.id === id) {
+          return { ...todo, completed: !completed };
+        } else {
+          return todo;
+        }
+      });
+    });
+    console.log(Todos);
+  }
 
   return (
     <div className="flex h-screen flex-col items-center justify-center">
@@ -55,43 +73,32 @@ export default function Todo() {
             </div>
           </form>
           <ul className="flex-col gap-4">
-            <li
-              className={`${
-                isToggled ? "line-through" : ""
-              } flex items-center gap-4 pt-4 font-medium text-white`}
-            >
-              <label htmlFor="text1">dwyduhwijwd</label>
-              <Switch
-                onChange={() => {
-                  console.log("duwhdijw");
-                  setIsToggled(!isToggled);
-                }}
-              />
-              <button
-                // onChange={}
-                className="rounded-md border border-red-950 bg-red-950"
+            {Todos.map((todo) => (
+              <li
+                key={todo.id}
+                className={`${
+                  !todo.completed ? "text-gray-600 line-through" : ""
+                } flex flex-grow items-center gap-4 border-b border-gray-800 pb-2 pt-4 font-medium text-white`}
               >
-                <XMarkIcon className="h-5 w-5 text-red-400 " />
-              </button>
-            </li>
-            <li className="flex items-center gap-4 pt-4 font-medium text-white">
-              <label htmlFor="text2">diwduwgdwftgyhudijokwdijd</label>
-              <Switch />
-              <button className="rounded border border-red-950 bg-red-950">
-                <XMarkIcon className="h-5 w-5 text-red-400 " />
-              </button>
-            </li>
+                <label className="flex-grow">{todo.item}</label>
+
+                <Switch
+                  onClick={() => {
+                    toggleTodo(todo.id, todo.completed);
+                  }}
+                />
+                <button
+                  onClick={() => deleteTodo(todo.id)}
+                  className="rounded-md border border-red-950 bg-red-950"
+                >
+                  <XMarkIcon className="h-5 w-5 text-red-400 " />
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
-      <footer className="*card-footer*">
-        <a
-          href="https://github.com/aadil10i/to-do"
-          className="text-sm text-gray-500 hover:text-gray-700"
-        >
-          GitHub
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }
