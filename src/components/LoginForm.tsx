@@ -1,6 +1,22 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Footer from "./CardFooter";
+import { signIn } from "next-auth/react";
 
 export default function LoginForm() {
+  function handleLogin() {
+    signIn("discord")
+      .then((result) => {
+        if (result?.error) {
+          console.log(result.error);
+        } else {
+          window.location.href = "/";
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   return (
     <div className="flex h-screen flex-col items-center justify-center">
       <div className="card card-custom-size mx-auto rounded-lg border border-gray-800">
@@ -8,9 +24,14 @@ export default function LoginForm() {
           <h3 className="text-lg font-semibold leading-6 text-white">
             Todo List
           </h3>
-          <p className="border-fill rounded-lg border bg-white p-1 text-sm font-medium leading-6">
-            Login with github
-          </p>
+          <a href="/api/auth/signin/discord">
+            <button
+              onClick={handleLogin}
+              className="border-fill rounded-lg border bg-white p-1 text-sm font-medium leading-6"
+            >
+              Login with discord
+            </button>
+          </a>
         </div>
         <div className="*card-body* flex-col px-6 py-6">
           <p className="text-md font-semibold leading-6 text-white">

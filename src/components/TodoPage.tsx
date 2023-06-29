@@ -3,6 +3,7 @@ import { PlusIcon } from "@heroicons/react/24/solid";
 import { Switch } from "./switch";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Footer from "./CardFooter";
+import { signOut } from "next-auth/react";
 
 export default function Todo() {
   interface Todo {
@@ -45,6 +46,15 @@ export default function Todo() {
     console.log(Todos);
   }
 
+  async function handleLogout() {
+    try {
+      await signOut({ callbackUrl: "http://localhost:3000" });
+      // Other stuff to handle post logout can be here, if there's any
+    } catch (error) {
+      console.error("Failed to sign out: ", error);
+    }
+  }
+
   return (
     <div className="flex h-screen flex-col items-center justify-center">
       <div className="card card-custom-size mx-auto rounded-lg border border-gray-800">
@@ -52,9 +62,13 @@ export default function Todo() {
           <h3 className="text-lg font-semibold leading-6 text-white">
             Todo List
           </h3>
-          <div className="rounded-lg border border-gray-800 px-1.5 py-1.5 font-bold text-white">
+          <button
+            // eslint-disable-next-line @typescript-eslint/no-misused-promises
+            onClick={handleLogout}
+            className="rounded-lg border border-gray-800 px-1.5 py-1.5 font-bold text-white"
+          >
             Logout
-          </div>
+          </button>
         </div>
         <div className="*card-body* flex-col gap-2 px-6 py-6">
           <form onSubmit={handleSubmit}>
