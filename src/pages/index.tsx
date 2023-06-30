@@ -1,5 +1,5 @@
 import LoginForm from "@/components/LoginForm";
-import Todo from "@/components/TodoPage";
+import Todo from "./todo";
 import { useSession } from "next-auth/react";
 
 export default function User() {
