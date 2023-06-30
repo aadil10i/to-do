@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import { useSession } from "next-auth/react";
 import { PlusIcon } from "@heroicons/react/24/solid";
 import { Switch } from "@/components/switch";
@@ -16,16 +16,7 @@ export default function Todo() {
 
   // const { data: session } = useSession();
   const [newItem, setNewItem] = useState("");
-  const [Todos, setTodos] = useState<Todo[]>(() => {
-    const localValue = localStorage.getItem("ITEMS");
-    if (localValue == null) return [];
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    return JSON.parse(localValue);
-  });
-
-  useEffect(() => {
-    localStorage.setItem("ITEMS", JSON.stringify(Todos));
-  }, [Todos]);
+  const [Todos, setTodos] = useState<Todo[]>([]);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
