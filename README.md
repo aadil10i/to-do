@@ -14,10 +14,8 @@
 <!-- Todo -->
 ## Todo
 
-- [x] add deletetodo
-- [x] make login page
-- [ ] add authentication
-- [ ] save on referesh
+- [x] add auth
+- [ ] deploy
 
 ### run locally
 
