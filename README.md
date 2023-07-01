@@ -1,5 +1,6 @@
 # React Todo App
-https://github.com/aadil10i/to-do/blob/main/brave_WZfk27grw2.gif
+![screenrec](https://github.com/aadil10i/to-do/blob/main/brave_WZfk27grw2.gif)
+
 
 ### Built With
 
