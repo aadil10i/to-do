@@ -1,6 +1,5 @@
 # React Todo App
-
-https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHNyeHFhMG81eXNpanJxNDd1OTU1Y284YmdzMDQ2ODJ5MWliYjFxbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j73VWoOhUafajFlbFQ/giphy.gif
+https://github.com/aadil10i/to-do/blob/main/brave_WZfk27grw2.gif
 
 ### Built With
 
