@@ -1,5 +1,5 @@
 # React Todo App
-https://gyazo.com/38d807c944c094b05a40ccd1be9ec9d0
+https://i.gyazo.com/38d807c944c094b05a40ccd1be9ec9d0.mp4
 
 ### Built With
 
