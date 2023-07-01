@@ -95,6 +95,7 @@ export default function Todo() {
           <form onSubmit={handleSubmit}>
             <div className="flex gap-2">
               <input
+                autoComplete="off"
                 value={newItem}
                 onChange={(e) => setNewItem(e.target.value)}
                 type="text"
@@ -112,7 +113,7 @@ export default function Todo() {
               <li
                 key={todo.id}
                 className={`${
-                  !todo.completed ? "text-gray-600 line-through" : ""
+                  !todo.completed ? "text-gray-700 line-through" : ""
                 } flex flex-grow items-center gap-4 border-b border-gray-800 pb-2 pt-4 font-medium text-white`}
               >
                 <label className="flex-grow">{todo.item}</label>
