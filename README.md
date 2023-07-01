@@ -1,5 +1,5 @@
 # React Todo App
-<!-- add screenshot -->
+https://gyazo.com/38d807c944c094b05a40ccd1be9ec9d0
 
 ### Built With
 
@@ -28,10 +28,6 @@
 4. ```sh
    pnpm run
    ```
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot.png
 
 <!-- Contribution -->
 ## Contribution
