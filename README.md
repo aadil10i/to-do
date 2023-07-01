@@ -1,5 +1,6 @@
 # React Todo App
-https://i.gyazo.com/38d807c944c094b05a40ccd1be9ec9d0.mp4
+
+https://github.com/aadil10i/to-do/assets/93860359/258b64cc-07b8-48cc-b668-4797443cdba9
 
 ### Built With
 
