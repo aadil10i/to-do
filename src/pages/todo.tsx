@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
 import React, { useState } from "react";
-// import { useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { PlusIcon } from "@heroicons/react/24/solid";
 import { Switch } from "@/components/switch";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Footer from "@/components/CardFooter";
 import { signOut } from "next-auth/react";
+import Image from "next/image";
 
 export default function Todo() {
   interface Todo {
@@ -14,7 +15,7 @@ export default function Todo() {
     completed: boolean;
   }
 
-  // const { data: session } = useSession();
+  const { data: session } = useSession();
   const [newItem, setNewItem] = useState("");
   const [Todos, setTodos] = useState<Todo[]>([]);
 
@@ -76,9 +77,18 @@ export default function Todo() {
           <button
             // eslint-disable-next-line @typescript-eslint/no-misused-promises
             onClick={handleLogout}
-            className="rounded-lg border border-gray-800 px-1.5 py-1.5 font-bold text-white"
+            className="flex rounded-lg border border-gray-800 px-1.5 py-1.5 font-bold text-white"
           >
-            Logout
+            {session?.user?.image && (
+              <Image
+                className="mr-2"
+                src={session.user.image}
+                alt="profile"
+                width={24}
+                height={24}
+              />
+            )}
+            {session?.user?.name}
           </button>
         </div>
         <div className="*card-body* flex-col gap-2 px-6 py-6">

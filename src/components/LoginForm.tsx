@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Footer from "./CardFooter";
 import { signIn } from "next-auth/react";
+import Image from "next/image";
 
 export default function LoginForm() {
   function handleLogin() {
@@ -27,15 +28,22 @@ export default function LoginForm() {
           <a href="/api/auth/signin/discord">
             <button
               onClick={handleLogin}
-              className="border-fill rounded-lg border bg-white p-1 text-sm font-medium leading-6"
+              className="border-fill flex rounded-lg border bg-white p-1 text-sm font-medium leading-6"
             >
+              <Image
+                className="mr-2"
+                src="/brand-discord.svg"
+                alt="discord"
+                width={24}
+                height={24}
+              />
               Login with discord
             </button>
           </a>
         </div>
         <div className="*card-body* flex-col px-6 py-6">
           <p className="text-md font-semibold leading-6 text-white">
-            Welcome to React Todos Edge.
+            Welcome to React Todos.
           </p>
           <p className="text-md mt-4 border-b border-gray-700 pb-4 leading-6 text-white">
             A{" "}
@@ -46,8 +54,6 @@ export default function LoginForm() {
             <a className="text-cyan-500" href="https://vercel.com">
               Vercel
             </a>{" "}
-            with server-side rendering on the edge and using vercel edge
-            functions
           </p>
           <p className="pt-2 text-sm font-light italic text-gray-200 dark:text-gray-300">
             No personal informations regarding your GitHub account are stored in
