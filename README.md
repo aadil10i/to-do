@@ -1,6 +1,6 @@
 # React Todo App
 
-![38d807c944c094b05a40ccd1be9ec9d0](https://github.com/aadil10i/to-do/assets/93860359/1a4f8c92-1a36-4e9f-9343-71cd5370587e)
+https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHNyeHFhMG81eXNpanJxNDd1OTU1Y284YmdzMDQ2ODJ5MWliYjFxbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j73VWoOhUafajFlbFQ/giphy.gif
 
 ### Built With
 
