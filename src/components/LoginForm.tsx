@@ -56,9 +56,9 @@ export default function LoginForm() {
             </a>{" "}
           </p>
           <p className="pt-2 text-sm font-light italic text-gray-200 dark:text-gray-300">
-            No personal informations regarding your GitHub account are stored in
-            database. We store only the todos created linked with your GitHub
-            ID.
+            No personal informations regarding your Discord account are stored
+            in database. We store only the todos created linked with your
+            Discord ID.
           </p>
         </div>
       </div>
