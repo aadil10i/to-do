@@ -15,8 +15,8 @@
 <!-- Todo -->
 ## Todo
 
-- [x] add auth
-- [ ] deploy
+- [x] add authentication
+- [x] deploy
 
 ### run locally
 
